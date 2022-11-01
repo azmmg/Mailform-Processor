@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Form Example</title>
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="form.js"></script>
+</head>
+  <body>
+    <p>The form should be placed elsewhere</p>
+    <p>Based on https://www.digitalocean.com/community/tutorials/submitting-ajax-forms-with-jquery</p>
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>Processing an AJAX Form</h1>
+      <form action="process.php" method="POST">
+        <div id="name-group" class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Vorname+Name oder Firma"
+          />
+        </div>
+
+        <div id="email-group" class="form-group">
+          <label for="email">E-Mail</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+        </div>
+
+        <div id="betreff-group" class="form-group">
+          <label for="betreff">Betreff</label>
+          <input
+            type="text"
+            class="form-control"
+            id="betreff"
+            name="betreff"
+            placeholder="Stichwort"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-success">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
